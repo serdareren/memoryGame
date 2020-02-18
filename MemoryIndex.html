@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Hafıza Oyunu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Css/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <style>
+      #div1{position: absolute;top:0px;left:0px; width: 30px;height: 30px;background:url(Img/hls.png); background-size:cover; z-index: 100;} 
+      #div1:hover{transform:scale(1.02);}             
+    </style>
+    
+    <script>
+        function fullScreen() {
+                parent.toggleFullScreen();}
+    </script>
+    
+    <script src="Script/tweenmax/TweenMax.min.js"></script>
+    <script src="Script/tweenmax/easing/EasePack.min.js"></script>
+    <script src="Script/tweenmax/utils/Draggable.min.js"></script> 
+    <script src="Script/jquery-1.12.3.js"></script>
+    <script src="Script/jquery-ui.js"></script>
+    <script src="Script/jumble.js"></script>
+    <script src="Script/jquery.corner.js"></script> 
+    <script src="Script/main.js"></script>
+    
+    <div id="main">
+      <img src="Img/play.png" id="play" style="z-index: 5; display: none">
+      <div id="score">Hamle: 0</div>
+      <div id="game">
+        <img src="Img/attach.png" id="attach" style="margin-left: 895px; margin-top: 350px; position: absolute; z-index: -0; " height="95" width="346px">
+        <div id="boxes"></div>
+
+        <div id="solutions">
+          <div id="equation"></div>
+          <div id="answer"></div>
+        </div>
+      </div>
+      <img src="Img/replay.png" id="restart" style="display: none">
+      <div id="apple"></div>
+      <div id="worm"></div>
+      <div id="finish">
+        <img src="Img/fin9.png" id="fin9"  style="position: absolute; margin-left: 150px; display: none">
+        <img src="Img/fin1.png" id="fin1" style="position: absolute; margin-top: 300px; display: none">
+        <img src="Img/fin4.png" id="fin4" style="position: absolute; margin-top: 140px; margin-left: 90px; display: none">
+        <img src="Img/fin5.png" id="fin5"  style="position: absolute; margin-top: 135px; margin-left: 495px; display: none">
+        <img src="Img/fin6.png" id="fin6"  style="position: absolute; margin-left: 435px; display: none">
+        <img src="Img/fin7.png" id="fin7" style="position: absolute; margin-top: 15px; margin-left: 140px; display: none">
+        <img src="Img/fin10.png" id="fin10"  style="position: absolute; margin-top: 290px; margin-left: 160px; display: none">
+        <img src="Img/fin8.png" id="fin8" style="position: absolute; margin-top: 75px; margin-left: 225px; display: none">
+        <img src="Img/fin2.png" id="fin2" style="position: absolute; margin-top: 270px; margin-left: 122px; display: none">
+        <img src="Img/fin3.png" id="fin3" style="position: absolute; margin-top: 270px; margin-left: 400px; display: none">
+        <img src="Img/fin11.png" id="fin11"  style="position: absolute; margin-top: 400px; margin-left: 100px; display: none">
+        <img src="Img/again1.png" id="again"  style="position: absolute; margin-top: 560px; margin-left: 135px; height: 75px; width: 375px; display: none">
+      </div>
+    </div>
+    
+    <div id="div1" onClick="fullScreen();"></div>
+  </body>
+</html>
