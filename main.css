@@ -1,0 +1,161 @@
+@font-face 
+{
+  font-family: 'sab';
+  src: url('font/Aller.ttf');
+  src: local('Sab'), local('sab'), url('../font/Aller.ttf') format('truetype');
+}
+body
+{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#main
+{
+  height: 720px;
+  width: 1280px;
+  background:url(../Img/background1.png);
+  background-size: cover;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-top: auto;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+#game
+{
+  height: 640px;
+  width: 1240px;
+  display:none;
+  position: absolute;
+}
+#boxes {
+  height: 568px;
+  width: 756px;
+  margin-left: 75px;
+  margin-top: 55px;
+  position: absolute;
+  z-index: 5;
+}
+.box
+{
+  height: 137px;
+  width: 184px;
+  margin-left: 5px;
+  margin-top: 5px;
+  float: left;
+  transform-origin: top left;
+  position: relative;
+}
+.box > .closed {
+  height: 137px;
+  width: 184px;
+  background-image: url(../Img/card-back.png);
+  position: absolute;
+
+}
+.box > .open {
+  height: 137px;
+  width: 184px;
+  background-image: url(../Img/card.png);
+  line-height: 137px;
+  color: #333300;
+  font-size: 60px;
+  text-align: center;
+  font-family: "sab";
+  position: absolute;
+  display: none;
+}
+#solutions {
+
+  height:95px;
+  width: 346px;
+  /*background-image: url(../Img/attach.png);*/
+  position: absolute;
+  margin-left: 870px;
+  margin-top: 350px; 
+  z-index: -2;
+}
+#equation{
+  height: 82.2px;
+  width: 110.4px;
+  position:absolute;
+  margin-left: 40px;
+  margin-top: 2px;
+}
+#answer{
+  height: 82.2px;
+  width: 110.4px;
+  margin-left: 160px;
+  margin-top: 2px;
+  position: absolute;
+}
+#restart{
+  margin-left:1000px;
+  margin-top:500px;
+  position: absolute;
+
+}
+#play{
+  margin-left: 540px;
+  margin-top: 200px;
+  position:absolute;
+}
+#play:hover{
+  transform: scale(1.02);
+}
+#score
+{
+  height:91px;
+  width: 128px;
+  position: absolute;
+  z-index: 5;
+  margin-left: 978px;
+  margin-top: 146px;
+  transform: rotate(-8deg);
+  display: none;
+  line-height: 88px;
+  color: #ffffff;
+  font-size: 26px;
+  text-align: center;
+  font-family: "sab";
+}
+#apple
+{
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  position: absolute;
+  background:url(../Img/apple13.png);
+  margin-left: 890px;
+  margin-top: 620px;
+}
+#worm
+{
+  height: 84px;
+  width: 105px;
+  z-index: 9;
+  position: absolute;
+  background:url(../Img/worm.png);
+  margin-left: 1160px;
+  margin-top: 630px;
+}
+#finish
+{
+  width: 647px;
+  height: 590px;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-top: auto;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 4;
+}
